@@ -20,7 +20,7 @@ int main() {
     float numberThree;
 
      // input
-        std::cout << "This calculator will calculate your"
+        std::cout << "This calculator will calculate your "
         "three numbers!" << std::endl;
         std::cout << "Note: this calculator will round to 2"
         "decimal places!" << std::endl;
@@ -40,18 +40,12 @@ int main() {
         float actual = static_cast<float>(static_cast<int>(average * 100)) /
         100;
 
-        if (numberOne >= 100) {
+        if (numberOne >= 100 || numberOne < 0) {
             std::cout << "Invalid Number (Number 1)!";
-        } else if (numberTwo >= 100) {
+        } else if (numberTwo >= 100 || numberTwo < 0) {
             std::cout << "Invalid Number (Number 2)";
-        } else if (numberThree >= 100) {
-            std::cout << "Invalid Number (Number 3)";
-        } else if (numberOne < 0) {
-            std::cout << "Invalid Number (Number 1)";
-        } else if (numberTwo < 0) {
+        } else if (numberThree >= 100 || numberThree < 0) {
             std::cout << "Invalid Number (Number 2)";
-        } else if (numberThree < 0) {
-            std::cout << "Invalid Number (Number 3)";
         } else { std::cout << "The average between your three"
         "numbers is " << actual << std::endl;
             }
