@@ -22,7 +22,7 @@ int main() {
      // input
         std::cout << "This calculator will calculate your "
         "three numbers!" << std::endl;
-        std::cout << "Note: this calculator will round to 2"
+        std::cout << "Note: this calculator will round to 2 "
         "decimal places!" << std::endl;
         std::cout << "Note: Max number is 100, Min number is 0" << std::endl;
         std::cout << "Enter your first number: ";
